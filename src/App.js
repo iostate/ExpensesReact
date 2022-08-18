@@ -1,5 +1,7 @@
 // import ExpenseItem from './components/ExpenseItem';
 import Expenses from './components/Expenses/Expenses';
+import ExpenseForm from './components/NewExpense/ExpenseForm';
+import NewExpense from './components/NewExpense/NewExpense';
 
 // function round(value, minDecimals, maxDecimals) {
 //   const formattedMoneyValue = value.toLocaleString('en', {
@@ -43,7 +45,7 @@ const expenses = [
 function App() {
   return (
     <div>
-      <h2 className='expenses-header'>Expenses</h2>
+      <NewExpense />
       <Expenses expenses={expenses} />
     </div>
   );
