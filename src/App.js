@@ -42,10 +42,14 @@ const expenses = [
     expenseAmount: 291.44,
   },
 ];
+const addExpenseHandler = (expense) => {
+  console.log(expense);
+};
+
 function App() {
   return (
     <div>
-      <NewExpense />
+      <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses expenses={expenses} />
     </div>
   );
